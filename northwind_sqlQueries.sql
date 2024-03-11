@@ -61,7 +61,7 @@ SELECT CONCAT('TR', UPPER(product_name)) AS "ProductName" FROM products
 
 -- 16. a.Fiyatı 20den küçük ürünlerin adının başına TR ekle
 SELECT CONCAT('TR', UPPER(product_name)) AS "ProductName", unit_price FROM products
-WHERE unit_price > 20
+WHERE unit_price < 20
 
 -- 17. En pahalı ürün listesini (`ProductName` , `UnitPrice`) almak için bir sorgu yazın.
 SELECT product_name, unit_price FROM products
